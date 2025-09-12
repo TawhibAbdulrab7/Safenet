@@ -11,11 +11,18 @@ class SafeNetApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
+    return  MaterialApp(
+      title: "SafeNet",
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.teal,
+        scaffoldBackgroundColor: Colors. white,
+      ),
+      home: const Scaffold(
         body: Center(
-          child: Text("بسم الله الرحمن الرحيم",style: TextStyle(fontSize: 30),),
+          child: Text("Hello SafeNet"),
         ),
+      // body: ,
       ),
     );
   }
