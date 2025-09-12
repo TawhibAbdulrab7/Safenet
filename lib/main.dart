@@ -1,6 +1,5 @@
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'screens/login_screen.dart';
 
 void main(){
   runApp(SafeNetApp());
@@ -18,12 +17,7 @@ class SafeNetApp extends StatelessWidget {
         primarySwatch: Colors.teal,
         scaffoldBackgroundColor: Colors. white,
       ),
-      home: const Scaffold(
-        body: Center(
-          child: Text("Hello SafeNet"),
-        ),
-      // body: ,
-      ),
+      home: const LoginScreen(),
     );
   }
 }
