@@ -14,10 +14,43 @@ class LoginScreen extends StatelessWidget {
             colors: [Colors.blue, Colors.lightBlueAccent],
           ),
         ),
-        child: const Center(
-          child: Icon(Icons.security, size: 80, color: Colors.white),
+
+
+          child: Padding(
+            padding: const EdgeInsets.all(20),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(Icons.security, size: 80, color: Colors.white),
+                const SizedBox(height: 20,),
+                const TextField(
+                  decoration: InputDecoration(
+                    labelText: "البريد الالكتروني",
+                    labelStyle: TextStyle(fontSize: 18,color:Colors.black ),
+                    prefixIcon: Icon(Icons.email),
+                    border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(15))
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 12,),
+                const TextField(
+                // cursorErrorColor: Colors.red,
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    labelText: "كلمة المرور",
+                    labelStyle: TextStyle(fontSize: 18,color:Colors.black ),
+                    prefixIcon: Icon(Icons.lock),
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(15))
+                    ),
+                  ),
+                ),
+
+              ],
+            ),
+          ),
         ),
-      ),
+
     );
   }
 }
