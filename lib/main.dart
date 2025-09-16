@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'screens/login_screen.dart';
-
+import 'screens/dashboard_screen.dart';
+// import 'screens/network_history_screen.dart';
+// import 'screens/wifi_scanner_screen.dart';
+// import 'screens/device_detector_screen.dart';
 void main(){
-  runApp(SafeNetApp());
+  runApp(const SafeNetApp());
   
 }
 class SafeNetApp extends StatelessWidget {
@@ -11,13 +14,12 @@ class SafeNetApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
-      title: "SafeNet",
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.teal,
-        scaffoldBackgroundColor: Colors. white,
-      ),
-      home: const LoginScreen(),
+      initialRoute: '/',
+      routes: {'/':(context)=> const LoginScreen(),
+               '/dashboard':(context)=> const DashboardScreen(),
+
+      },
     );
   }
 }
