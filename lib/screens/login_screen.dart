@@ -24,7 +24,7 @@ class LoginScreen extends StatelessWidget {
               const SizedBox(height: 20),
               const TextField(
                 decoration: InputDecoration(
-                  labelText: "البريد الالكتروني",
+                  labelText: "Enter_Your_Email",
                   labelStyle: TextStyle(fontSize: 18, color: Colors.black),
                   prefixIcon: Icon(Icons.email),
                   border: OutlineInputBorder(
@@ -37,7 +37,7 @@ class LoginScreen extends StatelessWidget {
                 // cursorErrorColor: Colors.red,
                 obscureText: true,
                 decoration: InputDecoration(
-                  labelText: "كلمة المرور",
+                  labelText: "Enter_Your_Password",
                   labelStyle: TextStyle(fontSize: 18, color: Colors.black),
                   prefixIcon: Icon(Icons.lock),
                   border: OutlineInputBorder(
